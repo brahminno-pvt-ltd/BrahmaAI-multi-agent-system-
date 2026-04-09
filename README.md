@@ -193,6 +193,7 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # Start the server
+cd .. # Back to root folder to start the backend server 
 uvicorn backend.main:app --reload --port 8000
 ```
 
